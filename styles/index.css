@@ -12,9 +12,12 @@
   font-style: normal;
 }
 /* shared styles */
+* {
+  margin: 0 0;
+}
 body {
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 body > section {
   margin: 100px;
@@ -61,35 +64,129 @@ body > section {
 }
 /* banner styles */
 .banner {
-  margin-top: 145px;
+  margin-top: 85px;
 }
 .banner-prebook {
   gap: 130px;
 }
 .banner-prebook img {
+  max-width: 100%;
   background-image: url(../images/Circle\ design.svg);
+  background-size: cover;
+  margin-bottom: 100px;
 }
 .banner-title {
   font-size: 3.25rem;
   font-weight: 700;
 }
 .banner-company-logos {
-  margin-top: 100px;
+  max-width: 1110px;
+  height: 110px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   justify-items: space-around;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+/* popular card styles */
+.popular-collection {
+  margin: 100px auto;
+}
+.popular-collection-title {
+  max-width: 265px;
+  font-weight: 600;
+  margin: 30px auto;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.card {
+  max-width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.card > img {
+  max-width: 100%;
+}
+.card-title {
+  margin-bottom: 10px;
+}
+.card-subtitle {
+  margin-bottom: 25px;
+}
+.card-description {
+  font-size: 0.8rem;
+}
+.card-bottom {
+  text-align: center;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 50px;
+  margin-right: 50px;
+  gap: 8pxf;
+  color: rgba(224, 44, 109, 0.87);
+}
+/* featured products styles */
+.featured-products {
+  max-width: 1110px;
+  gap: 100px;
+  align-items: center;
+}
+.featured-title {
+  margin-bottom: 16px;
+}
+.featured-btn {
+  border-radius: 0;
 }
 /* responsive styles */
 /* responsive mobile styles */
 @media screen and (max-width: 576px) {
   .navbar,
-  .nav-links,
-  .banner-prebook {
+  .nav-links {
     flex-direction: column;
   }
-  .banner-company-logos {
+  .banner-prebook,
+  .featured-products {
+    flex-direction: column-reverse;
+  }
+  .banner-text-container {
+    text-align: center;
+  }
+  .banner-company-logos,
+  .card-container {
     grid-template-columns: 1fr;
     gap: 30px;
     justify-items: center;
+  }
+  .banner-company-logos {
+    grid-template-columns: repeat(2,1fr);
+    height: fit-content;
+  }
+  .card-bottom {
+    margin-top: 25px;
+  }
+  .featured-products {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .banner-company-logos {
+    grid-template-columns: repeat(3, 1fr);
+    height: fit-content;
+    gap: 30px;
+  }
+  /* .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+  .card-bottom {
+    margin-right: 0px;
   }
 }
