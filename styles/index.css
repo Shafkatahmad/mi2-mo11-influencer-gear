@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+/* shared styles */
+body {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+body > section {
+  margin: 100px;
+}
+.display-flex {
+  display: flex;
+}
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.description {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.primary-font-color {
+  color: rgba(58, 58, 58, 1);
+}
+.secondary-font-color {
+  color: rgba(10, 8, 38, 1);
+}
+.btn-primary {
+  background-color: rgba(224, 44, 109, 1);
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  margin-top: 16px;
+}
+/* header styles */
+/* nav styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  margin-right: 30px;
+}
+/* banner styles */
+.banner {
+  margin-top: 145px;
+}
+.banner-prebook {
+  gap: 130px;
+}
+.banner-prebook img {
+  background-image: url(../images/Circle\ design.svg);
+}
+.banner-title {
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+.banner-company-logos {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
