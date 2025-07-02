@@ -15,7 +15,7 @@
 * {
   margin: 0 0;
 }
-body {
+header, main {
   max-width: 1200px;
   margin: 50px auto;
 }
@@ -145,6 +145,40 @@ body > section {
 }
 .featured-btn {
   border-radius: 0;
+}
+/* footer styles */
+footer {
+  height: 250px;
+  background-color: rgb(0, 0, 42);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer {
+  width: 250px;
+}
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 3px;
+}
+.footer-description {
+  font-size: 0.8rem;
+  margin-bottom: 3px;
+}
+.footer-web-icon-container {
+  margin-top: 25px;
+}
+.footer-web-icon-container img {
+  width: 100%;
+}
+.footer-web-icon {
+  width: 32px;
+  height: 32px;
+  color: white;
+  margin-right: 16px;
 }
 /* responsive styles */
 /* responsive mobile styles */
