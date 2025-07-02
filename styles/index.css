@@ -75,6 +75,21 @@ body > section {
 }
 .banner-company-logos {
   margin-top: 100px;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: space-around;
+}
+/* responsive styles */
+/* responsive mobile styles */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links,
+  .banner-prebook {
+    flex-direction: column;
+  }
+  .banner-company-logos {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+  }
 }
